@@ -26,13 +26,6 @@
 
   <?php
 
-
-  if (empty(getenv("DATABASE_URL"))) {
-    echo '<p>The DB does not exist</p>';
-    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=mydb', 'postgres', '123456');
-  } else {
-    echo '<p>The DB exists</p>';
-    echo getenv("dbname");
     $db = parse_url(getenv("DATABASE_URL"));
     $pdo = new PDO("pgsql:" . sprintf(
       "host=ec2-174-129-227-51.compute-1.amazonaws.com;port=5432; user=mcgukeefumpzju;password=a7a1360fc5b23a76cb0614c11b07e6dbf69f9604c8b5dacec301037c53c44236;dbname=dbrdj5ncji5jht",
@@ -42,7 +35,6 @@
       $db["pass"],
       ltrim($db["path"], "/")
     ));
-  }
 
   $sql = "SELECT * FROM product";
   $stmt = $pdo->prepare($sql);
