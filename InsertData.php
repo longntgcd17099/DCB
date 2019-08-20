@@ -63,7 +63,6 @@
     </ul>
     <div class="row">
         <div class="col-12">
-            <a href="ConnectToDB.php" class="myButton pl-3">View Data's ATN</a>
 
             <a href="UpdateData.php" class="myButton pl-3">Update data to the database's ATN</a>
 

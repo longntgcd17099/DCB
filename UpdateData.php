@@ -58,7 +58,6 @@
     </ul>
     <div class="row">
         <div class="col-12">
-            <a href="ConnectToDB.php" class="myButton pl-3">View Data's ATN</a>
 
             <a href="InsertData.php" class="myButton pl-3">Insert Product to the database's ATN</a>
 
