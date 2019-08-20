@@ -2,14 +2,14 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <head>
-	<title>ATN ADMIN LOGIN</title>
+	<title>ADT STORE</title>
 
 </head>
 <link rel="stylesheet" href="style.css">
 <style type="text/css">
 	body {
 		width: 100%;
-		height: 100%;
+		height: 50%;
 		background: url(abc.jpg) no-repeat;
 		background-size: cover;
 	}
