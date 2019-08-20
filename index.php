@@ -32,9 +32,9 @@
 			<a href="UpdateData.php" class="myButton pl-3">Update data to the database</a>
 
 			<a href="DeleteData.php" class="myButton pl-3">Delete data to the database</a> -->
-			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+			<button onclick="InsertData.php='block'" style="width:auto;">Login</button>
 			<div id="id01" class="modal">
-				<form class="modal-content animate " method="post" name="myForm" action="\ConnectToDB.php">
+				<form class="modal-content animate " method="post" name="myForm" action="\InsertData.php">
 					<div class="container">
 						<label><b>User Name ATN</b></label>
 						<input type="text" id="username" value="admin">
