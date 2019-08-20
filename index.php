@@ -32,8 +32,7 @@
 			<a href="UpdateData.php" class="myButton pl-3">Update data to the database</a>
 
 			<a href="DeleteData.php" class="myButton pl-3">Delete data to the database</a> -->
-			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-			<a class="asdad" href="InsertData.php" > Insert </a>
+			<a class="myButton pl-3" href="InsertData.php" > Insert </a>
 			
 		</div>
 	</div>
