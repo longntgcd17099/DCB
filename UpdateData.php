@@ -49,9 +49,9 @@
             <li>Name:</li>
             <li><input type="text" name="name" id="Name1" /></li>
             <li>Price:</li>
-            <li><input type="text" name="price" id="Price1" /></li>
+            <li><input type="text" name="Shopname" id="Shopname1" /></li>
             <li>Supplier:</li>
-            <li><input type="text" name="Suppliername" id="Supplier1" /></li>
+            <li><input type="text" name="price" id="price1" /></li>
             <li><input type="submit" onclick="CheckSupplier()" /></li>
         </form>
 

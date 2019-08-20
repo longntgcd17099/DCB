@@ -55,9 +55,9 @@
             <li>Full Name:</li>
             <li><input type="text" name="name" id="Name1" /></li>
             <li>Price:</li>
-            <li><input type="text" name="price" id="Price1" /></li>
+            <li><input type="text" name="Shopname" id="Shopname1" /></li>
             <li>Supplier:</li>
-            <li><input type="text" name="supplier" id="Supplier1" /></li>
+            <li><input type="text" name="Price" id="Price1" /></li>
             <li><input type="submit" name="Submit" onclick="CheckSupplier()" /></li>
         </form>
     </ul>
