@@ -48,9 +48,9 @@
             <li><input type="text" name="productid" id= /></li>
             <li>Name:</li>
             <li><input type="text" name="name" id="Name1" /></li>
-            <li>Price:</li>
+            <li>Shopname:</li>
             <li><input type="text" name="Shopname" id="Shopname1" /></li>
-            <li>Supplier:</li>
+            <li>price:</li>
             <li><input type="text" name="price" id="price1" /></li>
             <li><input type="submit" onclick="CheckSupplier()" /></li>
         </form>
@@ -105,7 +105,7 @@
 
     // return the number of row affected
     //return $stmt->rowCount();
-    $sql = "UPDATE product SET name = '$_POST[name]', price = '$_POST[price]', supplier = '$_POST[supplier]'
+    $sql = "UPDATE product SET name = '$_POST[name]', Shopname = '$_POST[Shopname]', Price = '$_POST[Price]'
         WHERE productid = '$_POST[productid]'";
     $stmt = $pdo->prepare($sql);
     if ($stmt->execute() == TRUE) {

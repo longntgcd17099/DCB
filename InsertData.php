@@ -54,9 +54,9 @@
             <li><input type="text" name="productid" /></li>
             <li>Full Name:</li>
             <li><input type="text" name="name" id="Name1" /></li>
-            <li>Price:</li>
+            <li>Shopname:</li>
             <li><input type="text" name="Shopname" id="Shopname1" /></li>
-            <li>Supplier:</li>
+            <li>Price:</li>
             <li><input type="text" name="Price" id="Price1" /></li>
             <li><input type="submit" name="Submit" onclick="CheckSupplier()" /></li>
         </form>
@@ -97,8 +97,8 @@
     }
 
     
-    $sql = "INSERT INTO product(productid, name, price, supplier)"
-        . " VALUES('$_POST[productid]','$_POST[name]','$_POST[price]','$_POST[supplier]')";
+    $sql = "INSERT INTO product(productid, name, Shopname, Price)"
+        . " VALUES('$_POST[productid]','$_POST[name]','$_POST[Shopname]','$_POST[price]')";
     $stmt = $pdo->prepare($sql);
     
     if (is_null($_POST[productid])) {
