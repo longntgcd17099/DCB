@@ -10,7 +10,7 @@
 	body {
 		width: 100%;
 		height: 100%;
-		background: url(background.jpg) no-repeat;
+		background: url(abc.jpg) no-repeat;
 		background-size: cover;
 	}
 
