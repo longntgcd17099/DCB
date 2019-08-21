@@ -106,13 +106,7 @@
     
     if (is_null($_POST[productID])) {
         echo "productID must be not null";
-    } else {
-        if ($stmt->execute() == TRUE) {
-            echo "Record inserted successfully.";
-        } else {
-            echo "Error inserting record: ";
-        }
-    }
+    } 
     ?>
 </body>
 
