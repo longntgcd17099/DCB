@@ -28,8 +28,7 @@
               ?>
 
               <?php
-                echo '<p>Database ATN</p>';
-                echo getenv("dbname");
+              $db = parse_url(getenv("DATABASE_URL"));
                 $pdo = new PDO("pgsql:" . sprintf(
          "host=ec2-54-227-245-146.compute-1.amazonaws.com;
       port=5432;
