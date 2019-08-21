@@ -104,9 +104,7 @@
         . " VALUES('$_POST[productID]','$_POST[name]','$_POST[Shopname]','$_POST[price]')";
     $stmt = $pdo->prepare($sql);
     
-    if (is_null($_POST[productID])) {
-        echo "productID must be not null";
-    } 
+    if (is_null($_POST[productID])) 
     ?>
 </body>
 
