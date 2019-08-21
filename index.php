@@ -9,7 +9,7 @@
 <style type="text/css">
 	body {
 		width: 100%;
-		height: 50%;
+		height: 100%;
 		background: url(abc.jpg) no-repeat;
 		background-size: cover;
 	}
@@ -32,8 +32,24 @@
 			<a href="UpdateData.php" class="myButton pl-3">Update data to the database</a>
 
 			<a href="DeleteData.php" class="myButton pl-3">Delete data to the database</a> -->
-			<a class="myButton pl-3" href="InsertData.php" > Insert </a>
-			
+			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+			<div id="id01" class="modal">
+				<form class="modal-content animate " method="post" name="myForm" action="\InsertData.php">
+					<div class="container">
+						<label><b>User Name ATN</b></label>
+						<input type="text" id="username" value="admin">
+
+						<label><b>Pass Word</b></label>
+						<input type="password" id="password1" value="admin">
+
+						<button type="submit" onclick="login1()">Login</button>
+					</div>
+
+					<div class="container" style="background-color:#f1f1f1">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 	<script>
