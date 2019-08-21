@@ -34,7 +34,7 @@
                 if ($pdo === false) {
                   echo "ERROR: Could not connect Database";
                 }
-                $sql = 'SELECT * FROM public."Product"';
+                $sql = 'SELECT * FROM public.Product';
                 $stmt = $pdo->prepare($sql);
                 //Thiết lập kiểu dữ liệu trả về
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -55,7 +55,7 @@
                   <tbody>
                     <?php foreach ($resultSet as $key => $value) : ?>
                       <tr class="odd gradeX">
-                        <td><?php echo $value['ProductID']; ?></td>
+                        <td><?php echo $value['productID']; ?></td>
                         <td><?php echo $value['Productname']; ?></td>
                         <td><?php echo $value['Shopname']; ?></td>
                         <td><?php echo $value['Price']; ?></td>
