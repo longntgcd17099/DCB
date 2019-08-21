@@ -30,7 +30,7 @@
               <?php
                 echo '<p>Database ATN</p>';
                 echo getenv("dbname");
-                $pdo = new PDO("pgsql:dbname=d5c9hsgmdvbs20;host=ec2-54-227-245-146.compute-1.amazonaws.com","user=dphhigcaqlnlbo", "password=2d9e255af360659b3de3c0428221be071372fbfdc09c6a64422cc8a73395b004" );
+                $pdo = new PDO("pgsql:dbname=d5c9hsgmdvbs20;host=ec2-54-227-245-146.compute-1.amazonaws.com","dphhigcaqlnlbo", "2d9e255af360659b3de3c0428221be071372fbfdc09c6a64422cc8a73395b004" );
                 if ($pdo === false) {
                   echo "ERROR: Could not connect Database";
                 }
