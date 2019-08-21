@@ -21,19 +21,19 @@
 </style>
 <script>
     function CheckClass() {
-        var CheckSupplierName = document.getElementById("Supplier1").value;
-        var checkProductName = document.getElementById("Name1").value;
-        var checkPrice = document.getElementById("Price1").value;
-        if (CheckSupplierName == "ToyCompany") {
+        var CheckProductname = document.getElementById("Product1").value;
+        var checkInvoice = document.getElementById("Employee1").value;
+        var checkPrice = document.getElementById("price1").value;
+        if (CheckProductname == "ToyCompany") {
             return true;
         } else if (checkProductName == "") {
-            alert("ProductName should have Data");
+            alert("Name should have Data");
             return false;
-        } else if (checkPrice == "") {
-            alert("Price should have Data");
+        } else if (checkEmail == "") {
+            alert("price should have Data");
             return false;
         } else {
-            alert("Supplier Name should equal ToyCompany");
+            alert("Supplier Name should equal ToyCompany ");
             return false;
         }
     }
@@ -45,14 +45,14 @@
     <ul>
         <form name="UpdateData" action="UpdateData.php" method="POST">
             <li>ProductID:</li>
-            <li><input type="text" name="productID" id= /></li>
+            <li><input type="text" name="InvoiceID" id= /></li>
             <li>Name:</li>
-            <li><input type="text" name="name" id="Name1" /></li>
+            <li><input type="text" name="Employee" id="Employee1" /></li>
             <li>Shopname:</li>
-            <li><input type="text" name="Shopname" id="Shopname1" /></li>
+            <li><input type="text" name="Day" id="Day1" /></li>
             <li>price:</li>
-            <li><input type="text" name="price" id="price1" /></li>
-            <li><input type="submit" onclick="CheckSupplier()" /></li>
+            <li><input type="text" name="Price" id="price1" /></li>
+            <li><input type="submit" onclick="CheckProduct()" /></li>
         </form>
 
     </ul>
@@ -107,8 +107,8 @@
 
     // return the number of row affected
     //return $stmt->rowCount();
-    $sql = "UPDATE Product SET productID = '$_POST[productID]', Shopname = '$_POST[Shopname]', Price = '$_POST[Price]'
-        WHERE productID = '$_POST[productID]'";
+    $sql = "UPDATE Invoice SET Employee = '$_POST[Employee]', day(format) = '$_POST[day]',  = '$_POST[Price]'
+        WHERE InvoiceID = '$_POST[InvoiceID]'";
     $stmt = $pdo->prepare($sql);  
 
     ?>

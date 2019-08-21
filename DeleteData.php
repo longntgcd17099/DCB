@@ -34,7 +34,7 @@
     <ul>
         <form name="DeleteData" action="DeleteData.php" method="POST">
             <li>PRODUCT ID:</li>
-            <li><input type="text" name="productid" id="take" /></li>
+            <li><input type="text" name="InvoiceID" id="take" /></li>
             <li><input type="submit" /></li>
         </form>
 
@@ -81,7 +81,7 @@
         ));
     }
 
-    $sql = "DELETE FROM product WHERE productID = '$_POST[productID]'";
+    $sql = "DELETE FROM product WHERE InvoiceID = '$_POST[InvoiceID]'";
     $stmt = $pdo->prepare($sql);
 
 

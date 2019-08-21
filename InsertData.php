@@ -2,10 +2,10 @@
 <html>
 <script>
     function CheckClass() {
-        var CheckSupplierName = document.getElementById("Supplier1").value;
-        var checkProductName = document.getElementById("Name1").value;
+        var CheckProductname = document.getElementById("Product1").value;
+        var checkInvoice = document.getElementById("Employee1").value;
         var checkPrice = document.getElementById("price1").value;
-        if (CheckSupplierName == "ToyCompany") {
+        if (CheckProductname == "ToyCompany") {
             return true;
         } else if (checkProductName == "") {
             alert("Name should have Data");
@@ -51,11 +51,11 @@
     <ul>
         <form name="InsertData" action="InsertData.php" method="POST">
             <li>Product ID:</li>
-            <li><input type="text" name="productid" /></li>
+            <li><input type="text" name="InvoiceID" /></li>
             <li>Full Name:</li>
-            <li><input type="text" name="name" id="Name1" /></li>
+            <li><input type="text" name="Employee" id="Employee1" /></li>
             <li>Shopname:</li>
-            <li><input type="text" name="Shopname" id="Shopname1" /></li>
+            <li><input type="text" name="Day" id="Day" /></li>
             <li>Price:</li>
             <li><input type="text" name="Price" id="Price1" /></li>
             <li><input type="submit" name="Submit" onclick="CheckSupplier()" /></li>
@@ -100,11 +100,11 @@
     }
 
     
-    $sql = "INSERT INTO product(productID, name, Shopname, Price)"
-        . " VALUES('$_POST[productID]','$_POST[name]','$_POST[Shopname]','$_POST[price]')";
+    $sql = "INSERT INTO Invoice(InvoicetID, Employee, day, Price)"
+        . " VALUES('$_POST[InvoiceID]','$_POST[Employee]','$_POST[day]','$_POST[price]')";
     $stmt = $pdo->prepare($sql);
     
-    if (is_null($_POST[productID])) 
+    if (is_null($_POST[IncoiceID])) 
     ?>
 </body>
 
