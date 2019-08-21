@@ -62,6 +62,8 @@
             <a href="InsertData.php" class="myButton pl-3">Insert Product to the database's ATN</a>
 
             <a href="DeleteData.php" class="myButton pl-3">Delete Product to the database's ATN</a>
+
+            <a href="index.php" class="myButton pl-3">Go Home</a>
         </div>
     </div>
     <?php
