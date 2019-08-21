@@ -83,13 +83,7 @@
 
     $sql = "DELETE FROM product WHERE productID = '$_POST[productID]'";
     $stmt = $pdo->prepare($sql);
-    if ($stmt->execute() == TRUE) {
-        echo "Record deleted successfully.";
-    } else {
-        echo "Error deleting record: ";
-    }
 
-    ?>
 </body>
 
 </html>
