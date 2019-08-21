@@ -63,12 +63,14 @@
     </ul>
     <div class="row">
         <div class="col-12">
+            <a href="ConnectToDB.php" class="myButton pl-3">view data to the database's ATN</a>
 
             <a href="UpdateData.php" class="myButton pl-3">Update data to the database's ATN</a>
 
             <a href="DeleteData.php" class="myButton pl-3">Delete data to the database's ATN</a>
 
             <a href="index.php" class="myButton pl-3">Go Home</a>
+
         </div>
     </div>
     <?php
