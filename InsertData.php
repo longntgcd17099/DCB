@@ -100,8 +100,8 @@
     }
 
     
-    $sql = "INSERT INTO Invoice(InvoicetID, Employee, day, Price)"
-        . " VALUES('$_POST[InvoiceID]','$_POST[Employee]','$_POST[day]','$_POST[price]')";
+    $sql = "INSERT INTO Invoice(InvoicetID, Employee, Day, Price)"
+        . " VALUES('$_POST[InvoiceID]','$_POST[Employee]','$_POST[Day]','$_POST[price]')";
     $stmt = $pdo->prepare($sql);
     
     if (is_null($_POST[IncoiceID])) 
