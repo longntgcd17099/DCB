@@ -68,11 +68,11 @@
 
         $db = parse_url(getenv("DATABASE_URL"));
         $pdo = new PDO("pgsql:" . sprintf(
-         "host=ec2-174-129-227-51.compute-1.amazonaws.com;
+         "host=ec2-54-227-245-146.compute-1.amazonaws.com;
       port=5432;
-      user=mcgukeefumpzju;
-      password=a7a1360fc5b23a76cb0614c11b07e6dbf69f9604c8b5dacec301037c53c44236;
-      dbname=dbrdj5ncji5jht",
+      user=dphhigcaqlnlbo;
+      password=2d9e255af360659b3de3c0428221be071372fbfdc09c6a64422cc8a73395b004;
+      dbname=d5c9hsgmdvbs20",
             $db["host"],
             $db["port"],
             $db["user"],

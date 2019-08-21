@@ -30,7 +30,7 @@
               <?php
                 echo '<p>The DB exists</p>';
                 echo getenv("dbname");
-                $pdo = new PDO("pgsql:dbname=d6h89lsnl3a8d4;host=ec2-107-22-238-217.compute-1.amazonaws.com","vpfgbbzvnyifkc", "987a9247716d140d93d1fbec9ca96c2715d76597779e58c0cc4e8871688c1364" );
+                $pdo = new PDO("pgsql:dbname=d5c9hsgmdvbs20;host=ec2-54-227-245-146.compute-1.amazonaws.com","dphhigcaqlnlbo", "2d9e255af360659b3de3c0428221be071372fbfdc09c6a64422cc8a73395b004" );
                 if ($pdo === false) {
                   echo "ERROR: Could not connect Database";
                 }
