@@ -84,6 +84,8 @@
     $sql = "DELETE FROM product WHERE productID = '$_POST[productID]'";
     $stmt = $pdo->prepare($sql);
 
+
+    ?>
 </body>
 
 </html>
