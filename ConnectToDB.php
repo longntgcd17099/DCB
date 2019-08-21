@@ -34,13 +34,13 @@
                 if ($pdo === false) {
                   echo "ERROR: Could not connect Database";
                 }
-                $sql = 'SELECT * FROM public."Supplier"';
+                $sql = 'SELECT * FROM public.Product';
                 $stmt = $pdo->prepare($sql);
                 //Thiết lập kiểu dữ liệu trả về
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $stmt->execute();
                 $resultSet = $stmt->fetchAll();
-                echo '<p>Supplier Information:</p>';
+                echo '<p>Product Information:</p>';
               ?>
               <div class="table-responsive">
                 <table class="table">
@@ -55,10 +55,10 @@
                   <tbody>
                     <?php foreach ($resultSet as $key => $value) : ?>
                       <tr class="odd gradeX">
-                        <td><?php echo $value['Supplier_ID']; ?></td>
-                        <td><?php echo $value['Supplier_Name']; ?></td>
-                        <td><?php echo $value['Supplier_Address']; ?></td>
-                        <td><?php echo $value['Supplier_Phone']; ?></td>
+                        <td><?php echo $value['ProductID']; ?></td>
+                        <td><?php echo $value['Productname']; ?></td>
+                        <td><?php echo $value['Shopname']; ?></td>
+                        <td><?php echo $value['Price']; ?></td>
                       </tr>
                     <?php endforeach; ?>
 
