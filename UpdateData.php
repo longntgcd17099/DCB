@@ -108,7 +108,7 @@
     // return the number of row affected
     //return $stmt->rowCount();
     $sql = "UPDATE product SET name = '$_POST[name]', Shopname = '$_POST[Shopname]', Price = '$_POST[Price]'
-        WHERE productid = '$_POST[productid]'";
+        WHERE productID = '$_POST[productID]'";
     $stmt = $pdo->prepare($sql);
     if ($stmt->execute() == TRUE) {
         echo "Record updated successfully.";

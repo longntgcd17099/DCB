@@ -100,11 +100,11 @@
     }
 
     
-    $sql = "INSERT INTO product(productid, name, Shopname, Price)"
-        . " VALUES('$_POST[productid]','$_POST[name]','$_POST[Shopname]','$_POST[price]')";
+    $sql = "INSERT INTO product(productID, name, Shopname, Price)"
+        . " VALUES('$_POST[productID]','$_POST[name]','$_POST[Shopname]','$_POST[price]')";
     $stmt = $pdo->prepare($sql);
     
-    if (is_null($_POST[productid])) {
+    if (is_null($_POST[productID])) {
         echo "productID must be not null";
     } else {
         if ($stmt->execute() == TRUE) {
