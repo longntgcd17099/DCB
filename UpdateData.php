@@ -109,12 +109,7 @@
     //return $stmt->rowCount();
     $sql = "UPDATE Product SET productID = '$_POST[productID]', Shopname = '$_POST[Shopname]', Price = '$_POST[Price]'
         WHERE productID = '$_POST[productID]'";
-    $stmt = $pdo->prepare($sql);
-    if ($stmt->execute() == TRUE) {
-        echo "Record updated successfully.";
-    } else {
-        echo "Error updating record. ";
-    }
+    $stmt = $pdo->prepare($sql);  
 
     ?>
 </body>
